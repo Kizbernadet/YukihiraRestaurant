@@ -1,0 +1,626 @@
+/* Yukihiira Restaurant Website Stylesheet */
+
+/* Usables Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
+
+
+*{
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* all balises styles */
+li{
+    list-style: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+/* all balises styles */
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    overflow-x: hidden;
+}
+
+.calligraphic-style{
+    font-family: "Dancing Script", cursive;
+}
+
+.capitalize-bold{
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+/* ============== Scrollbar ===================== */
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    height: 10px;
+    background-color: red;
+}
+
+section{
+    margin-bottom: 50px;
+}
+
+/* Main Style */
+main{
+    flex-grow: 1;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(pics/landing-page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a{
+    font-family: "okashi", "Open Sans", sans-serif;
+    font-size: 60px;
+    color: red;
+}
+
+.navbar{
+    height: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.navbar li a{
+    color: white;
+    padding: 5px;
+}
+
+.navbar li a:hover{
+    color: white;
+    background-color: red;
+    transition: all 0.3s;
+}
+
+.social_networks{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.social_networks i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social_networks i:hover{
+    color: red;
+}
+
+.landing-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.landing-page p{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+.landing-page p span{
+    font-family: "okashi", "Open Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    color: red;
+}
+
+header a.look-menu-button{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    background-color: white;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+header a.look-menu-button:hover{
+    color: white;
+    background-color: red;
+}
+
+/* First Section */
+.first-section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEFEF;
+    padding: 20px;
+}
+
+.first-section .content-box, .first-section .images{
+    width: 40%;
+    height: 100%;
+}
+
+.first-section .images, .first-section .content-box{
+    position: relative;
+}
+
+.first-section .content-box{
+    padding: 0px 5%;
+}
+
+.first-section .content-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.content-box .introduction{
+    margin-bottom: 10px;
+}
+
+.content-box .introduction .calligraphic-style{
+    color: red;
+}
+
+.content-box a{
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px 20px;
+    background-color: red;
+    margin-top: 30px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.content-box a:hover{
+    color: red;
+    background-color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+.content-box .introduction .capitalize-bold{
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.content-box .introduction .calligraphic-style{
+    font-size: 1.8rem;
+}
+
+.first-section .images img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* First Section */
+
+/* ============== Discover Section ===================== */
+section.discover{
+    width: 100%;
+    padding-top: 40px;
+}
+
+.discover .poster{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url(pics/poster32.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.discover .poster .title{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.discover .poster .title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.discover .poster .title .calligraphic-style{
+    color: red;
+}
+
+.discover .poster .title .capitalize-bold{
+    font-family: "okashi", "Open Sans", sans-serif;
+    font-size: 3rem;  
+    font-weight: lighter;
+}
+
+
+
+.discover .articles{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.articles .items{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F7F7;
+    border-radius: 20px;
+}
+
+.items .item-pics{
+    width: 100%;
+    height: 55%;
+}
+
+.items .item-pics img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.items .content{
+    font-size: 13px;
+    height: 40%;
+}
+
+.items .content h3,.items .content p{
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+
+.items .content h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.items .content p{
+    text-align: justify;
+}
+
+.items .content a{
+    display: block;
+    height: 40px;
+    font-size: 1.1rem;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: uppercase;
+    background-color: red;
+}
+
+.items .content a i{
+    display: none;
+    margin: 0px 5px;
+}
+
+/* .items .content a:hover{
+    padding: 5px 10px;
+    color: white;
+    background-color: red;
+    transition: all ease-in-out 0.3s;
+} */
+
+/* ============== Discover Section ===================== */
+
+/* ============== Menu Section ===================== */
+section.menu{
+    width: 100%;
+    /* height: 600px; */
+    background-color: #F5F2EC;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.title .calligraphic-style{
+    color: red;
+}
+
+.title .capitalize-bold{
+    font-size: 3rem;  
+}
+
+.menu .food-gallery{
+    display: grid;
+    /* background-color: seagreen; */
+    grid-template-columns: repeat(2, 300px) 350px;
+    grid-template-rows: repeat(3, 220px);
+    gap: 15px;
+    margin-top: 80px;
+}
+
+.food-gallery .items{
+    position: relative;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.food-gallery .vertical-case{
+    grid-row: 1/ 3;
+}
+
+.food-gallery .vertical-case:first-child{
+    grid-column: 1/ 2;
+}
+
+.food-gallery .vertical-case:nth-child(2){
+    grid-column: 2/3;
+    background-color: darkblue;
+}
+
+.food-gallery .horizontal-case{
+    grid-column: 1/ 3;
+    grid-row: 3/ 4;
+    background-color: pink;
+}
+
+.food-gallery .little-horizontal-case{
+    grid-column: 3/ 4;
+    background-color: crimson;
+}
+
+/* grid gallery cases background-images */
+.food-gallery .lunch{
+    background-image: url(pics/lunch2.jpg);
+}
+
+.food-gallery .dinner{
+    background-image: url(pics/dinner2.jpg);
+}
+
+.food-gallery .happy-hour{
+    background-image: url(pics/happy-hour.jpg);
+}
+
+.food-gallery .drink{
+    background-image: url(pics/menu-drink.jpg);
+}
+
+.food-gallery .starter{
+    background-image: url(pics/starter2.jpg);
+}
+
+.food-gallery .dessert{
+    background-image: url(pics/dessert2.jpg);
+}
+
+/* Grid Gallery Cases Description Text */
+.food-gallery .items a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.food-gallery .items a:hover{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    transition: all ease-in-out 0.3s;
+}
+
+
+/* ============== Menu Section ===================== */
+
+/* ============== Form Section ===================== */
+.form-section{
+    width: 100%;
+    height: 600px;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-section .form-items{
+    height: 100%;
+}
+
+/* Form Style */
+.form-section .form-container{
+    width: 55%;
+}
+
+.form-section .form-title{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-title .calligraphic-style{
+    color: red;
+}
+
+.form-container form{
+    width: 100%;
+    height: 80%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+form .first-box{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form .second-box{
+    width: 100%;
+    height: 50px;
+    padding-left: 35%;
+}
+
+
+form .line{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+form .line .write{
+    width: 48%;
+    height: 100%;
+}
+
+.write label{
+    height: 20px;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.write input, .write select{
+    width: 100%;
+    height: 40px; 
+    border-radius: 5px; 
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: black;
+    background-color: white;
+    border: solid grey 1.5px;
+}
+
+.second-box .button{
+    width: 200px;
+    height: 100%;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    background-color: black; 
+    cursor: pointer;
+}
+
+.second-box .button:hover{
+    font-weight: 500;
+    color: white;
+    background-color: red;
+}
+
+/* Form Style */
+
+.form-section .picture-box{
+    position: relative;
+    width: 45%;
+}
+
+.picture-box img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 5%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+/* ============== Form Section ===================== */
+/* Main Style */
+
+footer{
+    height: 200px;
+    background-color: green;
+}
+
